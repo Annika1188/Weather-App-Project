@@ -15,21 +15,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" place holder="Enter a city.." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-imput"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Sydney</h1>
-          <p>
-            Tuesday 12:14, scattered clouds
-            <br />
-            Humidity:65%, Wind: 3.13km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Sydney</h1>
+            <p class="weather-app-details">
+              Tuesday 12:14, scattered clouds
+              <br />
+              Humidity:<strong>65%</strong>, Wind:<strong> 3.13km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-app-temp-container">
+            <div class="weather-app-icon">🌨️</div>
+            <div class="weather-app-temp">18</div><di class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌨️ 18°C</div>
       </main>
       <footer>
         Coded by
